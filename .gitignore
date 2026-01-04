@@ -1,4 +1,5 @@
-/DAOD_PHYSLITE.38191914._000036.pool.root (1).1
-/DAOD_PHYSLITE.38191666._000036.pool.root.1
+data/
+__pycache__/
+.ipynb_checkpoints/
 
 
