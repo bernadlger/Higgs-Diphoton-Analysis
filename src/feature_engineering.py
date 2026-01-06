@@ -54,3 +54,58 @@ def calculate_delta_r(eta1, phi1, eta2, phi2):
     delta_R = np.sqrt(delta_eta**2 + delta_phi**2)
 
     return delta_R
+
+
+def calculate_delta_eta(eta1, eta2):
+    """
+    Calculate the absolute difference in pseudorapidity between two particles.
+    """
+    delta_eta = np.abs(eta1 - eta2)
+    
+    return delta_eta
+
+
+def calculate_delta_phi(phi1, phi2):
+    """
+    Calculate the absolute difference in azimuthal angle between two particles.
+    Adjusted to be within the range [0, pi]. 
+    """
+    delta_phi = phi1 - phi2
+    
+    # Adjust delta_phi to be within the range [-pi, pi]    
+    delta_phi = np.arctan2(np.sin(delta_phi), np.cos(delta_phi))
+    
+    # Take absolute value to get [0, pi]
+    delta_phi = np.abs(delta_phi)
+    
+    return delta_phi
+
+
+
+def calculate_pt_ratio(pt_lead, pt_sublead):
+    """
+    Calculate the ratio of sublead pt to lead pt. 
+    Range: (0, 1] - closer to 1 means more balanced. 
+    """
+    pt_ratio = pt_sublead / pt_lead
+    
+    return pt_ratio
+
+
+def calculate_pt_asymmetry(pt_lead, pt_sublead):
+    """
+    Calculate the pt asymmetry between two photons.
+    Range: [0, 1) - closer to 0 means more balanced.
+    """
+    pt_asymmetry = (pt_lead - pt_sublead) / (pt_lead + pt_sublead)
+    
+    return pt_asymmetry
+
+
+def calculate_pt_sum(pt_lead, pt_sublead):
+    """
+    Calculate the total transverse momentum of the diphoton system. 
+    """
+    pt_sum = pt_lead + pt_sublead
+    
+    return pt_sum
