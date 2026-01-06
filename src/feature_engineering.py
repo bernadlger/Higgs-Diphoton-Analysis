@@ -32,7 +32,7 @@ def calculate_invariant_mass(pt1, eta1, phi1, pt2, eta2, phi2):
     pz = pz1 + pz2
 
     #invariant mass calculation
-    m_squared = E_total**2 - (px**2 + py**2 + pz**2)
+    m_squared = E**2 - (px**2 + py**2 + pz**2)
     m_squared = np.maximum(m_squared, 0)  # Numerical safety
 
     # Convert to GeV
