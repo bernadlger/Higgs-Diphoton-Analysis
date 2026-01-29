@@ -1,5 +1,0 @@
-"""
-Utilities Module
-================
-Yardımcı fonksiyonlar.
-"""

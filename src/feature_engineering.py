@@ -1,7 +1,7 @@
 """
 Feature Engineering Module
-==========================
-Fiziksel değişken hesaplama fonksiyonları.
+This module contains functions to compute various features for diphoton events,
+including  angular separations and transverse momentum characteristics.
 """
 import numpy as np
 
