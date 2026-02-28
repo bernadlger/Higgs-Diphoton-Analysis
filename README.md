@@ -19,7 +19,7 @@ This project develops a machine learning pipeline to distinguish Higgs diphoton 
 ## Analysis Pipeline
 
 <p align="center">
-  <img src="Assets/Analysis.svg" alt="Analysis Pipeline" width="400">
+  <img src="Assets/Analysis.svg" alt="Analysis Pipeline" width="525">
 </p>
 
 ## 📓 Notebook Overview
