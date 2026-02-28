@@ -18,7 +18,9 @@ This project develops a machine learning pipeline to distinguish Higgs diphoton 
 
 ## Analysis Pipeline
 
-![Analysis Pipeline](Assets/Analysis.svg)
+<p align="center">
+  <img src="Assets/Analysis.svg" alt="Analysis Pipeline" width="400">
+</p>
 
 ## 📓 Notebook Overview
 ### 01 & 02: Data Exploration
@@ -98,7 +100,7 @@ train–test performance gaps, indicating limited overfitting.
 
 ### ROC Curves
 
-![ROC Comparison](Assets/roc_curve.png)
+<img src="Assets/roc_curve.png" alt="ROC Comparison" width="65%">
 
 ## 📚 References & Sources
 
